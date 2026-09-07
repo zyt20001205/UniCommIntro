@@ -34,11 +34,46 @@ export interface TranslationSchema {
       automation: string;
     };
   };
+  describe: {
+    eyebrow: string;
+    title: string;
+  };
+  build: {
+    eyebrow: string;
+    title: string;
+  };
+  review: {
+    eyebrow: string;
+    title: string;
+  };
+  run: {
+    eyebrow: string;
+    title: string;
+  };
+  observe: {
+    eyebrow: string;
+    title: string;
+  };
+  workflowProgress: {
+    title: string;
+    steps: {
+      readAttachment: string;
+      understandProtocol: string;
+      inspectPorts: string;
+      resolveUserInput: string;
+      createPort: string;
+      planAndBuildWorkflow: string;
+      reviewPlanAndLua: string;
+      approveAndRun: string;
+      traceAndEvaluate: string;
+    };
+  };
   narration: {
     opening: {
       product: string;
       problem: string;
       audience: string;
     };
+    describe: string;
   };
 }
